@@ -1,3 +1,11 @@
+:root {
+    --salmon: #FF6D34;
+    --orange: #F3A600;
+    --yellow: #FFC74E;
+    --green:  #1E6543;
+    --blue:   #0A0018;
+}
+
 *,
 *::before,
 *::after {

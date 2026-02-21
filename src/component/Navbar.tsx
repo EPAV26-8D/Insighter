@@ -7,7 +7,7 @@ export function Navbar() {
         <ul className={styles.navLinks}>
           <li>
             <button className="openAside">
-              <i className="bi bi-three-dots"></i>
+              <i className="bi bi-list"></i>
             </button>
           </li>
           <li>

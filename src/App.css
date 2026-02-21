@@ -1,18 +1,12 @@
 :root {
-    --salmon: #FF6D34;
+    --salmon: #FF5614;
     --orange: #F3A600;
-    --yellow: #FFC74E;
+    --yellow: #ffbd2f;
     --green:  #1E6543;
     --blue:   #0A0018;
 
-    --lsalmon: #ff6e34dd;
-    --lorange: #F3A600dd;
-    --lyellow: #FFC74Edd;
-    --lgreen:  #1E6543dd;
-    --lblue:   #0A0018dd;
-
     --header-height: 3rem;
-    --main-padding:  2rem;
+    --main-padding:  2.25rem;
 }
 
 *,
@@ -27,6 +21,21 @@
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Inter Tight', sans-serif;
     font-weight: 800;
+}
+
+h1 { font-size: 2.986rem; }
+h2 { font-size: 2.488rem; }
+h3 { font-size: 2.074rem; }
+h4 { font-size: 1.728rem; }
+h5 { font-size: 1.44rem; }
+h6 { font-size: 1.2rem; }
+p  { font-size: 1rem; }
+
+h1 {
+    background: linear-gradient(90deg, var(--salmon), var(--yellow));
+    -webkit-background-clip: text;
+            background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 main {

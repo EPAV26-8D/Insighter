@@ -6,6 +6,7 @@ export function Navbar() {
       <nav className={styles.navbar} aria-label="Navegação principal">
         <ul className={styles.navLinks}>
           <li>
+            butt
             <a href="/">
               <i className="bi bi-house"></i>
             </a>

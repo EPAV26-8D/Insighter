@@ -12,8 +12,6 @@ export function Navbar() {
           </li>
         </ul>
 
-        <input className={styles.searchbar} type="search" />
-
         <ul className={styles.navLinks}>
           <li>
             <a href="/settings">

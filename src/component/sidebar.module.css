@@ -1,0 +1,12 @@
+.sidebar {
+  position: fixed;
+  top: var(--header-height);
+  left: -100%;
+  width: 16rem;
+  height: calc(100dvh - var(--header-height));
+  transition: left 250ms ease;
+}
+
+.open {
+  left: 0;
+}

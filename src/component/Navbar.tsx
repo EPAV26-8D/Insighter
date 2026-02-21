@@ -6,7 +6,7 @@ export function Navbar() {
       <nav className={styles.navbar} aria-label="Navegação principal">
         <ul className={styles.navLinks}>
           <li>
-            <button className="openSidebar">
+            <button className="toggleSidebar">
               <i className="bi bi-list"></i>
             </button>
           </li>

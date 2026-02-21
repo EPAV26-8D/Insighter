@@ -1,6 +1,6 @@
 :root {
     --salmon: #FF5614;
-    --orange: #F3A600;
+    --orange: #ff9204;
     --yellow: #ffbd2f;
     --green:  #1E6543;
     --blue:   #0A0018;
@@ -18,6 +18,10 @@
     font-family: 'Inter', sans-serif;
 }
 
+:focus {
+    outline: none;
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Inter Tight', sans-serif;
     font-weight: 800;
@@ -32,7 +36,7 @@ h6 { font-size: 1.2rem; }
 p  { font-size: 1rem; }
 
 h1 {
-    background: linear-gradient(90deg, var(--salmon), var(--yellow));
+    background: linear-gradient(0, var(--salmon), var(--yellow));
     -webkit-background-clip: text;
             background-clip: text;
     -webkit-text-fill-color: transparent;

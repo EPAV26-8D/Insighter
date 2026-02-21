@@ -6,7 +6,19 @@ export function Navbar() {
       <nav className={styles.navbar} aria-label="Navegação principal">
         <ul className={styles.navLinks}>
           <li>
-            <a href="/">Home</a>
+            <a href="/">
+              <i className="bi bi-house"></i>
+            </a>
+          </li>
+        </ul>
+
+        <input className={styles.searchbar} type="search" />
+
+        <ul className={styles.navLinks}>
+          <li>
+            <a href="/settings">
+              <i className="bi bi-gear"></i>
+            </a>
           </li>
         </ul>
       </nav>

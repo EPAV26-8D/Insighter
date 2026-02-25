@@ -10,7 +10,7 @@ export function Navbar({ onToggleSidebar }: NavbarProps) {
       <nav className={styles.navbar} aria-label="Navegação principal">
         <ul className={styles.navLinks}>
           <li>
-            <button className="toggleSidebar" onClick={onToggleSidebar}>
+            <button className={styles.toggleSidebar} onClick={onToggleSidebar}>
               <i className="bi bi-list"></i>
             </button>
           </li>

@@ -34,11 +34,11 @@
 }
 
 .navLinks a, .navLinks button {
-	width:              2rem;
-	height:             2rem;
+	width:              calc(var(--header-height) - 1rem);
+	height:             calc(var(--header-height) - 1rem);
 	background-color: rgba(255, 255, 255, 0.2);
 	border:             1px solid rgba(255, 255, 255, 0.2);
-	border-radius:      0.5rem;
+	border-radius:      10px;
 	color:             white;
 }
 
@@ -48,7 +48,6 @@
 	justify-content:    center;
 	gap:                5px;
 	text-decoration:    none;
-	font-size:          0.9rem;
 }
 
 .toggleSidebar { cursor: pointer; }

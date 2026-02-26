@@ -7,8 +7,10 @@
 	width:            15rem;
 	height:           calc(100dvh - var(--header-height));
 	padding:          1rem;
-	background-color: var(--lgray3);
+	background-color: var(--tlgray2);
 	border-right:     1px solid var(--lgray4);
+	-webkit-backdrop-filter: blur(2px);
+			backdrop-filter: blur(2px);
 	transition:       left 0.4s;
 	z-index:          9998;
 }
@@ -31,11 +33,6 @@
 	cursor:           pointer;
 	transition:       background-color 0.4s;
 }
-
-.sidebar li:hover {
-	background-color: var(--lgray2);
-}
-
 .sidebar a {
 	font-size:       0.95rem;
 	text-decoration: none;

@@ -1,4 +1,4 @@
-:root {
+ :root {
     --salmon: #FF5614;
     --orange: #ff9204;
     --yellow: #ffbd2f;
@@ -11,7 +11,7 @@
     --lgray4: #d4d4d4;
     --lgray5: #c8c8c8;
     --lgray6: #bcbcbc;
-    
+
     --tlgray1: #f8f8f8dd;
     --tlgray2: #ecececdd;
     --tlgray3: #e0e0e0dd;
@@ -19,10 +19,44 @@
     --tlgray5: #c8c8c8dd;
     --tlgray6: #bcbcbcdd;
 
+    --dgray1: #000000;
+    --dgray2: #0c0c0c;
+    --dgray3: #181818;
+    --dgray4: #242424;
+    --dgray5: #303030;
+    --dgray6: #3c3c3c;
+
+    --tdgray1: #000000dd;
+    --tdgray2: #0c0c0cdd;
+    --tdgray3: #181818dd;
+    --tdgray4: #242424dd;
+    --tdgray5: #303030dd;
+    --tdgray6: #3c3c3cdd;
+
     --text-color: #333;
+    --surface-color: #ffffff;
 
     --header-height: 3.25rem;
     --main-padding:  2.25rem;
+}
+
+:root[data-theme="dark"] {
+    --lgray1: var(--dgray1);
+    --lgray2: var(--dgray2);
+    --lgray3: var(--dgray3);
+    --lgray4: var(--dgray4);
+    --lgray5: var(--dgray5);
+    --lgray6: var(--dgray6);
+
+    --tlgray1: var(--tdgray1);
+    --tlgray2: var(--tdgray2);
+    --tlgray3: var(--tdgray3);
+    --tlgray4: var(--tdgray4);
+    --tlgray5: var(--tdgray5);
+    --tlgray6: var(--tdgray6);
+
+    --text-color: #f2f2f2;
+    --surface-color: #121212;
 }
 
 *,
@@ -36,6 +70,12 @@
 
 :focus {
     outline: none;
+}
+
+
+body {
+    background-color: var(--surface-color);
+    color: var(--text-color);
 }
 
 h1, h2, h3, h4, h5, h6 {

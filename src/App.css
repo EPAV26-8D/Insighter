@@ -5,19 +5,21 @@
     --green:  #1E6543;
     --blue:   #0A0018;
 
-    --lgray1: #f8f8f8;
-    --lgray2: #ececec;
-    --lgray3: #e0e0e0;
-    --lgray4: #d4d4d4;
-    --lgray5: #c8c8c8;
-    --lgray6: #bcbcbc;
+    --gray1: #f8f8f8;
+    --gray2: #ececec;
+    --gray3: #e0e0e0;
+    --gray4: #d4d4d4;
+    --gray5: #c8c8c8;
+    --gray6: #bcbcbc;
 
-    --tlgray1: #f8f8f8dd;
-    --tlgray2: #ecececdd;
-    --tlgray3: #e0e0e0dd;
-    --tlgray4: #d4d4d4dd;
-    --tlgray5: #c8c8c8dd;
-    --tlgray6: #bcbcbcdd;
+    --tgray1: #f8f8f8bb;
+    --tgray2: #ecececbb;
+    --tgray3: #e0e0e0bb;
+    --tgray4: #d4d4d4bb;
+    --tgray5: #c8c8c8bb;
+    --tgray6: #bcbcbcbb;
+
+    --tsup: rgba(0, 0, 0, 0.05);
 
     --dgray1: #000000;
     --dgray2: #0c0c0c;
@@ -26,34 +28,38 @@
     --dgray5: #303030;
     --dgray6: #3c3c3c;
 
-    --tdgray1: #000000dd;
-    --tdgray2: #0c0c0cdd;
-    --tdgray3: #181818dd;
-    --tdgray4: #242424dd;
-    --tdgray5: #303030dd;
-    --tdgray6: #3c3c3cdd;
+    --tdgray1: #000000f5;
+    --tdgray2: #0c0c0cf5;
+    --tdgray3: #181818f5;
+    --tdgray4: #242424f5;
+    --tdgray5: #303030f5;
+    --tdgray6: #3c3c3cf5;
 
-    --text-color: #333;
+    --dtsup: rgba(255, 255, 255, 0.03);
+
+    --text-color: #222;
     --surface-color: #ffffff;
 
     --header-height: 3.25rem;
-    --main-padding:  2.25rem;
+    --main-paeeing:  2.25rem;
 }
 
 :root[data-theme="dark"] {
-    --lgray1: var(--dgray1);
-    --lgray2: var(--dgray2);
-    --lgray3: var(--dgray3);
-    --lgray4: var(--dgray4);
-    --lgray5: var(--dgray5);
-    --lgray6: var(--dgray6);
+    --gray1: var(--dgray1);
+    --gray2: var(--dgray2);
+    --gray3: var(--dgray3);
+    --gray4: var(--dgray4);
+    --gray5: var(--dgray5);
+    --gray6: var(--dgray6);
 
-    --tlgray1: var(--tdgray1);
-    --tlgray2: var(--tdgray2);
-    --tlgray3: var(--tdgray3);
-    --tlgray4: var(--tdgray4);
-    --tlgray5: var(--tdgray5);
-    --tlgray6: var(--tdgray6);
+    --tgray1: var(--tdgray1);
+    --tgray2: var(--tdgray2);
+    --tgray3: var(--tdgray3);
+    --tgray4: var(--tdgray4);
+    --tgray5: var(--tdgray5);
+    --tgray6: var(--tdgray6);
+
+    --tsup: var(--dtsup);
 
     --text-color: #f2f2f2;
     --surface-color: #121212;
@@ -99,6 +105,6 @@ h1 {
 }
 
 main {
-    padding:     var(--main-padding);
-    padding-top: calc(var(--header-height) + var(--main-padding));
+    padding:     var(--main-paeeing);
+    padding-top: calc(var(--header-height) + var(--main-paeeing));
 }

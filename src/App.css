@@ -19,26 +19,35 @@
     --tgray5: #c8c8c8bb;
     --tgray6: #bcbcbcbb;
 
-    --tsup: rgba(0, 0, 0, 0.05);
-
     --dgray1: #000000;
-    --dgray2: #0c0c0c;
-    --dgray3: #181818;
-    --dgray4: #242424;
-    --dgray5: #303030;
-    --dgray6: #3c3c3c;
-
+    --dgray2: #080808;
+    --dgray3: #101010;
+    --dgray4: #181818;
+    --dgray5: #202020;
+    --dgray6: #282828;
+    
     --tdgray1: #000000f5;
-    --tdgray2: #0c0c0cf5;
-    --tdgray3: #181818f5;
-    --tdgray4: #242424f5;
-    --tdgray5: #303030f5;
-    --tdgray6: #3c3c3cf5;
+    --tdgray2: #080808f5;
+    --tdgray3: #101010f5;
+    --tdgray4: #181818f5;
+    --tdgray5: #202020f5;
+    --tdgray6: #282828f5;
 
-    --dtsup: rgba(255, 255, 255, 0.03);
-
-    --text-color: #222;
+    --text-color: #202020;
     --surface-color: #ffffff;
+
+    --surface-navbar-bg: linear-gradient(
+		90deg,
+		var(--salmon),
+		var(--orange)
+	);
+    --surface-navbar-item-bg: rgba(255, 255, 255, 0.15); 
+    --surface-navbar-item-bd: 1px solid rgba(255, 255, 255, 0.15); 
+
+    --surface-sidebar-bg: var(--tgray2);
+    --surface-sidebar-bd: 1px solid var(--tgray4);
+    --surface-sidebar-item-bg: var(--tgray3);
+    --surface-sidebar-item-bd: 1px solid var(--tgray4);
 
     --header-height: 3.25rem;
     --main-paeeing:  2.25rem;
@@ -58,8 +67,6 @@
     --tgray4: var(--tdgray4);
     --tgray5: var(--tdgray5);
     --tgray6: var(--tdgray6);
-
-    --tsup: var(--dtsup);
 
     --text-color: #f2f2f2;
     --surface-color: #121212;
@@ -84,7 +91,7 @@ body {
     color: var(--text-color);
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3 {
     font-family: 'Inter Tight', sans-serif;
     font-weight: 800;
 }

@@ -89,6 +89,12 @@
 body {
     background-color: var(--surface-color);
     color: var(--text-color);
+
+    background-image:
+        linear-gradient(var(--gray2) 1px, transparent 1px),
+        linear-gradient(90deg, var(--gray2) 1px, transparent 1px);
+
+    background-size: 1.75rem 1.75rem;
 }
 
 h1, h2, h3 {

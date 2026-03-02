@@ -13,47 +13,47 @@ export function Sidebar({ isOpen }: SidebarProps) {
       <h5>Categorias</h5>
       <ul>
         <li>
-          <a href="">Bovinos</a>
+          <a href="/bovinos">Bovinos</a>
         </li>
         <li>
-          <a href="">Suínos</a>
+          <a href="/suinos">Suínos</a>
         </li>
         <li>
-          <a href="">Aves</a>
+          <a href="/aves">Aves</a>
         </li>
         <li>
-          <a href="">Pescados</a>
+          <a href="/pescados">Pescados</a>
         </li>
         <li>
-          <a href="">Entradas</a>
+          <a href="/entradas">Entradas</a>
         </li>
         <li>
-          <a href="">Acompanhamentos</a>
+          <a href="/acompanhamentos">Acompanhamentos</a>
         </li>
         <li>
-          <a href="">Sobremesas</a>
+          <a href="/sobremesas">Sobremesas</a>
         </li>
         <li>
-          <a href="">Bebidas</a>
+          <a href="/bebidas">Bebidas</a>
         </li>
       </ul>
 
       <h5>Ocasiões</h5>
       <ul>
         <li>
-          <a href="">Churrasco</a>
+          <a href="/churrasco">Churrasco</a>
         </li>
         <li>
-          <a href="">Almoço do Dia a Dia</a>
+          <a href="/almoco-dia-a-dia">Almoço do Dia a Dia</a>
         </li>
         <li>
-          <a href="">Almoço Especial</a>
+          <a href="/almoco-especial">Almoço Especial</a>
         </li>
         <li>
-          <a href="">Jantar do Dia a Dia</a>
+          <a href="/jantar-dia-a-dia">Jantar do Dia a Dia</a>
         </li>
         <li>
-          <a href="">Jantar Especial</a>
+          <a href="/jantar-especial">Jantar Especial</a>
         </li>
       </ul>
     </aside>

@@ -4,7 +4,7 @@
 	flex-direction:   column;
 	top:              var(--header-height);
 	left:             -100%;
-	width:            15.5i mfvfvrem;
+	width:            15.5rem;
 	height:           calc(100dvh - var(--header-height));
 	padding:          1rem;
 	gap:              10px;

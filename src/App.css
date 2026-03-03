@@ -12,12 +12,12 @@
     --gray5: #c8c8c8;
     --gray6: #bcbcbc;
 
-    --tgray1: #f8f8f8bb;
-    --tgray2: #ecececbb;
-    --tgray3: #e0e0e0bb;
-    --tgray4: #d4d4d4bb;
-    --tgray5: #c8c8c8bb;
-    --tgray6: #bcbcbcbb;
+    --tgray1: #f8f8f8ee;
+    --tgray2: #ecececee;
+    --tgray3: #e0e0e0ee;
+    --tgray4: #d4d4d4ee;
+    --tgray5: #c8c8c8ee;
+    --tgray6: #bcbcbcee;
 
     --dgray1: #000000;
     --dgray2: #080808;
@@ -144,6 +144,7 @@ main {
     padding:    2rem;
     background: var(--surface-special-card-bg);
     border:     none;
+    color:      white;
 }
 
 .card.special::before {

@@ -41,7 +41,7 @@
 	color:           var(--text-color);
 }
 
-.sidebar h5 {
+.sidebar h3 {
 	background: linear-gradient(45deg, var(--salmon), var(--yellow));
     -webkit-background-clip: text;
             background-clip: text;

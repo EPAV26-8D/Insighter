@@ -10,7 +10,7 @@ export function Sidebar({ isOpen }: SidebarProps) {
       className={`${styles.sidebar} ${isOpen ? styles.open : ''}`.trim()}
       aria-hidden={!isOpen}
     >
-      <h5>Categorias</h5>
+      <h3>Categorias</h3>
       <ul>
         <li>
           <a href="/bovinos">Bovinos</a>
@@ -38,7 +38,7 @@ export function Sidebar({ isOpen }: SidebarProps) {
         </li>
       </ul>
 
-      <h5>Ocasiões</h5>
+      <h3>Ocasiões</h3>
       <ul>
         <li>
           <a href="/churrasco">Churrasco</a>

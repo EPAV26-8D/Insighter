@@ -12,12 +12,12 @@
     --gray5: #c8c8c8;
     --gray6: #bcbcbc;
 
-    --tgray1: #f8f8f8ee;
-    --tgray2: #ecececee;
-    --tgray3: #e0e0e0ee;
-    --tgray4: #d4d4d4ee;
-    --tgray5: #c8c8c8ee;
-    --tgray6: #bcbcbcee;
+    --tgray1: #f8f8f8dd;
+    --tgray2: #ecececdd;
+    --tgray3: #e0e0e0dd;
+    --tgray4: #d4d4d4dd;
+    --tgray5: #c8c8c8dd;
+    --tgray6: #bcbcbcdd;
 
     --dgray1: #000000;
     --dgray2: #080808;
@@ -46,7 +46,7 @@
 
     --surface-sidebar-bg: var(--tgray2);
     --surface-sidebar-bd: 1px solid var(--tgray4);
-    --surface-sidebar-item-bg: var(--tgray3);
+    --surface-sidebar-item-bg: var(--tgray1);
     --surface-sidebar-item-bd: 1px solid var(--tgray4);
 
     --surface-card-bg: var(--gray2);
@@ -81,6 +81,8 @@
 
     --text-color: #f2f2f2;
     --surface-color: var(--gray1);
+
+    --surface-sidebar-item-bg: var(--tgray3);
 }
 
 *,
@@ -137,6 +139,7 @@ main {
     background-color: var(--surface-card-bg);
     border:           var(--surface-card-bd);
     border-radius:    1.75rem;
+    box-shadow:       0 0 1rem rgba(0, 0, 0, 0.1);
 }
 
 .card.special {
@@ -158,9 +161,9 @@ main {
 
 .card .card-options {
     display:        flex;
-    flex-direction: column;
     list-style:     none;
     margin-top:     10px;
+    gap:            10px;
     overflow-x:     auto;
 }
 
@@ -171,7 +174,7 @@ main {
 .card .card-option {
     display:          flex;
     flex-direction:   column;
-    width:            9rem;
+    width:            8.75rem;
     background-color: var(--surface-card-item-bg);
     border:           var(--surface-card-item-bd);
     border-radius:    12px;
@@ -186,6 +189,7 @@ main {
 
 .card .card-option p {
     font-size: 0.85rem;
+    opacity:   0.8;
 }
 
 .card .card-text {

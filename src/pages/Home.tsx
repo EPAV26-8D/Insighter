@@ -41,7 +41,7 @@ export function Home() {
             <div className="card-option">
               <img src={jantarEspecial} />
               <div className="card-text">
-                <h5>Jantar do Dia a Dia</h5>
+                <h5>Jantar Especial</h5>
                 <p>Ver detalhes</p>
               </div>
             </div>

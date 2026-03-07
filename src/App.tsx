@@ -1,7 +1,12 @@
 import { useEffect, useState } from 'react'
 import { Navbar } from './component/Navbar'
 import { Sidebar } from './component/Sidebar'
+import { AlmocoDiaaDia } from './pages/AlmocoDiaaDia'
+import { AlmocoEspecial } from './pages/AlmocoEspecial'
+import { Churrasco } from './pages/Churrasco'
 import { Home } from './pages/Home'
+import { JantarDiaaDia } from './pages/JantarDiaaDia'
+import { JantarEspecial } from './pages/JantarEspecial'
 import { Settings } from './pages/Settings'
 import './App.css'
 
@@ -34,12 +39,17 @@ function App() {
     setTheme(nextTheme)
   }
 
-  const currentPage =
-    currentRoute === '/settings' ? (
-      <Settings theme={theme} onToggleTheme={handleToggleTheme} />
-    ) : (
-      <Home />
-    )
+  const pageByRoute = {
+    '/': <Home />,
+    '/settings': <Settings theme={theme} onToggleTheme={handleToggleTheme} />,
+    '/churrasco': <Churrasco />,
+    '/almoco-dia-a-dia': <AlmocoDiaaDia />,
+    '/almoco-especial': <AlmocoEspecial />,
+    '/jantar-dia-a-dia': <JantarDiaaDia />,
+    '/jantar-especial': <JantarEspecial />,
+  }
+
+  const currentPage = pageByRoute[currentRoute as keyof typeof pageByRoute] ?? <Home />
 
   return (
     <>

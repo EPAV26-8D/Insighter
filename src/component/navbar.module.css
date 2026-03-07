@@ -2,9 +2,10 @@
 	position:         fixed;
 	display:          flex;
 	align-items:      center;
-	width:            100dvw;
+	width:            100%;
 	height:           calc(var(--header-height));
 	background:       var(--surface-navbar-bg);
+	box-shadow:       0 0 2rem rgba(0, 0, 0, 0.2);
 	z-index:          9999;
 }
 

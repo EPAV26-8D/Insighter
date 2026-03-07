@@ -11,50 +11,50 @@ export function Home() {
         <h1>Bem-vindo(a)!</h1>
         <p>Comece escolhendo alguma ocasião:</p>
         <ul className="card-options">
-        <li>
-            <div className="card-option">
+          <li>
+            <a href="/churrasco" className="card-option">
               <img src={churrasco} />
               <div className="card-text">
                 <h5>Churrasco</h5>
                 <p>Ver detalhes</p>
               </div>
-            </div>
+            </a>
           </li>
           <li>
-            <div className="card-option">
+            <a  className="card-option">
               <img src={almocoDiaaDia} />
               <div className="card-text">
                 <h5>Almoço do Dia a Dia</h5>
                 <p>Ver detalhes</p>
               </div>
-            </div>
+            </a>
           </li>
           <li>
-            <div className="card-option">
+            <a className="card-option">
               <img src={almocoEspecial} />
               <div className="card-text">
                 <h5>Almoço Especial</h5>
                 <p>Ver detalhes</p>
               </div>
-            </div>
+            </a>
           </li>
           <li>
-            <div className="card-option">
+            <a className="card-option">
               <img src={jantarDiaaDia} />
               <div className="card-text">
                 <h5>Jantar do Dia a Dia</h5>
                 <p>Ver detalhes</p>
               </div>
-            </div>
+            </a>
           </li>
           <li>
-            <div className="card-option">
+            <a className="card-option">
               <img src={jantarEspecial} />
               <div className="card-text">
                 <h5>Jantar Especial</h5>
                 <p>Ver detalhes</p>
               </div>
-            </div>
+            </a>
           </li>
         </ul>
       </div>

@@ -179,6 +179,8 @@ main {
     border:           var(--surface-card-item-bd);
     border-radius:    12px;
     overflow:         hidden;
+    color:            white;
+    cursor:           pointer;
 }
 
 .card .card-option img {
@@ -193,7 +195,9 @@ main {
 }
 
 .card .card-text {
-    padding: 10px;
+    padding:         10px;
+    text-align:      left;
+    text-decoration: none;
 }
 
 @media (max-width: 1024px) {

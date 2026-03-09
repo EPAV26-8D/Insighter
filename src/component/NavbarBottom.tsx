@@ -1,17 +1,13 @@
 import '../styles/navbar.css'
 import styles from './navbarBottom.module.css'
 
-type NavbarProps = {
-  onToggleSidebar: () => void
-}
-
-export function NavbarBottom({ onToggleSidebar }: NavbarProps) {
+export function NavbarBottom() {
   return (
-    <header className='container'>
-      <nav className={styles.navbar} aria-label="Navegação principal">
-        <ul className={styles.navLinks}>
+    <header className={`container ${styles.container}`}>
+      <nav className='navbar'>
+        <ul className='navLinks'>
           <li>
-            <button className={styles.toggleSidebar} onClick={onToggleSidebar}>
+            <button className='toggleSidebar'>
               <i className="bi bi-list"></i>
             </button>
           </li>
@@ -22,7 +18,7 @@ export function NavbarBottom({ onToggleSidebar }: NavbarProps) {
           </li>
         </ul>
 
-        <ul className={styles.navLinks}>
+        <ul className='navLinks'>
           <li>
             <a href="/settings">
               <i className="bi bi-gear"></i>

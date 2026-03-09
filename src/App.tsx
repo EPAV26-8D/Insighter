@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { NavbarTop } from './component/NavbarTop'
+import { NavbarBottom } from './component/NavbarBottom'
 import { Sidebar } from './component/Sidebar'
 import { AlmocoDiaaDia } from './pages/AlmocoDiaaDia'
 import { AlmocoEspecial } from './pages/AlmocoEspecial'
@@ -56,6 +57,7 @@ function App() {
   return (
     <>
       <NavbarTop onToggleSidebar={handleToggleSidebar} />
+      <NavbarBottom />
       <Sidebar isOpen={isSidebarOpen} />
       <main>{currentPage}</main>
     </>

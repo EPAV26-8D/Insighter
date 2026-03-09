@@ -7,8 +7,8 @@ type NavbarProps = {
 
 export function NavbarTop({ onToggleSidebar }: NavbarProps) {
   return (
-    <header className='container'>
-      <nav className='navbar' aria-label="Navegação principal">
+    <header className={`container ${styles.container}`}>
+      <nav className='navbar'>
         <ul className='navLinks'>
           <li>
             <button className='toggleSidebar' onClick={onToggleSidebar}>

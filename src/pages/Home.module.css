@@ -1,15 +1,29 @@
 .hero {
-    display:         flex;
-    flex-direction:  column;
-    justify-content: center;
-    height:          12.5rem;
+    display:         grid;
+    grid-template-areas: 
+        'h1 img'
+        'p img'
+        'btn img'
+    ;
+    grid-template-columns: 1fr 7.5rem;
     padding:         2rem;
     background:      var(--surface-special-card-bg);
     color:           white;
     line-height:     1;
 }
 
+.hero h1 { grid-area: h1; }
+.hero p { grid-area: p; }
+
+.hero img { 
+    align-self: center;
+    justify-self: center;
+    grid-area: img;
+    width:     100%;
+}
+
 .hero a {
+    grid-area:        btn;
     display:          flex;
     align-items:      center;
     justify-content:  center;

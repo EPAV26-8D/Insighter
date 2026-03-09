@@ -7,18 +7,13 @@ export function NavbarBottom() {
       <nav className='navbar'>
         <ul className='navLinks'>
           <li>
-            <button className='toggleSidebar'>
-              <i className="bi bi-list"></i>
-            </button>
-          </li>
-          <li>
             <a href="/">
               <i className="bi bi-house"></i>
             </a>
           </li>
           <li>
-            <a href="/settings">
-              <i className="bi bi-gear"></i>
+            <a href="/calculadora">
+              <i className="bi bi-calculator"></i>
             </a>
           </li>
         </ul>

@@ -13,16 +13,9 @@ export function NavbarTop({ onToggleSidebar }: NavbarProps) {
           <button className='toggleSidebar' onClick={onToggleSidebar}>
               <i className="bi bi-list"></i>
           </button>
-          <li>
-            <a href="/">
-              <i className="bi bi-house"></i>
-            </a>
-          </li>
-          <li>
-            <a href="/settings">
-              <i className="bi bi-gear"></i>
-            </a>
-          </li>
+          <button className='showTime' onClick={onToggleSidebar}>
+              <i className="bi bi-clock"></i>
+          </button>
         </ul>
       </nav>
     </header>

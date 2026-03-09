@@ -40,6 +40,7 @@
     border:             none;
 	border-right:       var(--surface-navbar-bd);
     color:              var(--text-color);
+	cursor:             pointer;
 }
 
 .navLinks li a {

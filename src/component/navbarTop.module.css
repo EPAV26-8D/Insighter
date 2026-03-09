@@ -2,3 +2,22 @@
 	top: 1rem;
 	left: 1rem;
 }
+
+progress {
+	margin: 0 1rem;
+	height: 0.75rem;
+}
+
+progress::-webkit-progress-bar {
+	border-radius: 1rem;
+	background-color: rgba(127, 127, 127, 0.15);
+}
+
+progress::-webkit-progress-value {
+	border-radius: 1rem;
+	background: linear-gradient(
+		90deg,
+		var(--salmon),
+		var(--orange)
+	);
+}

@@ -16,7 +16,7 @@ export function NavbarTop({ onToggleSidebar }: NavbarProps) {
           <button className='toggleTimeBar' onClick={onToggleSidebar}>
               <i className="bi bi-clock"></i>
           </button>
-          <progress value={40} max={100} />
+          <progress className='timeBar' value={0} max={100} />
         </ul>
       </nav>
     </header>

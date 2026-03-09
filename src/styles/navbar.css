@@ -4,7 +4,7 @@
 	align-items:      center;
 	height:           calc(var(--navbar-height));
 	background-color: var(--surface-navbar-bg);
-	border:    var(--surface-navbar-bd);
+	border:           var(--surface-navbar-bd);
     border-radius:    10px;
 	box-shadow:       0 0 2rem rgba(0, 0, 0, 0.2);
 	-webkit-backdrop-filter: blur(1rem);

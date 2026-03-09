@@ -44,8 +44,6 @@
 
     --surface-navbar-bg:      var(--tgray1);
     --surface-navbar-bd:      1px solid rgba(127, 127, 127, 0.25);
-    --surface-navbar-item-bg: var(--tgray2); 
-    --surface-navbar-item-bd: 1px solid var(--tgray4); 
 
     --surface-sidebar-bg: var(--tgray2);
     --surface-sidebar-bd: 1px solid var(--tgray4);
@@ -127,6 +125,11 @@ h4 { font-size: 1.728rem; }
 h5 { font-size: 1.44rem; }
 h6 { font-size: 1.2rem; }
 p  { font-size: 1rem; }
+
+li > a {
+    width: 100%;
+	height: 100%;
+}
 
 main {
     padding-bottom: var(--navbar-height);

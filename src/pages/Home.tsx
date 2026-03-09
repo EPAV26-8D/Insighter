@@ -10,7 +10,8 @@ export function Home() {
     <>
       <section className={styles.hero}>
         <h1>Páscoa</h1>
-        <p>Ocasião Especial - Mar/Abr</p>
+        <p><strong>Ocasião Especial</strong> - Mar/Abr</p>
+        <a href="/especial">Ver detalhes</a>
       </section>
 
       <section className="content">

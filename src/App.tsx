@@ -7,6 +7,7 @@ import { Churrasco } from './pages/Churrasco'
 import { Home } from './pages/Home'
 import { JantarDiaaDia } from './pages/JantarDiaaDia'
 import { JantarEspecial } from './pages/JantarEspecial'
+import { Especial } from './pages/Especial'
 import { Settings } from './pages/Settings'
 import './App.css'
 
@@ -47,6 +48,7 @@ function App() {
     '/almoco-especial': <AlmocoEspecial />,
     '/jantar-dia-a-dia': <JantarDiaaDia />,
     '/jantar-especial': <JantarEspecial />,
+    '/especial': <Especial />,
   }
 
   const currentPage = pageByRoute[currentRoute as keyof typeof pageByRoute] ?? <Home />

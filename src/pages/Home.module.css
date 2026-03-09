@@ -1,5 +1,26 @@
 .hero {
-    display:    flex;
-    height:     10rem;
-    background: var(--surface-special-card-bg);
+    display:         flex;
+    flex-direction:  column;
+    justify-content: center;
+    height:          12.5rem;
+    padding:         2rem;
+    background:      var(--surface-special-card-bg);
+    color:           white;
+    line-height:     1;
+}
+
+.hero a {
+    display:          flex;
+    align-items:      center;
+    justify-content:  center;
+    width:            fit-content;
+    height:           2rem;
+    padding:          0 1rem;
+    margin-top:       0.5rem;
+    background-color: var(--surface-special-card-item-bg);
+    border:           var(--surface-special-card-item-bd);
+    border-radius:    0.5rem;
+    text-decoration:  none;
+    color:            white;
+    font-size:        0.9rem;
 }

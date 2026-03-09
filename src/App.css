@@ -32,18 +32,18 @@
     --dgray5: #202020;
     --dgray6: #282828;
     
-    --tdgray1: #000000f0;
-    --tdgray2: #050505f0;
-    --tdgray3: #101010f0;
-    --tdgray4: #181818f0;
-    --tdgray5: #202020f0;
-    --tdgray6: #282828f0;
+    --tdgray1: #000000e0;
+    --tdgray2: #050505e0;
+    --tdgray3: #101010e0;
+    --tdgray4: #181818e0;
+    --tdgray5: #202020e0;
+    --tdgray6: #282828e0;
 
     --text-color: #202020;
     --surface-color: var(--gray1);
 
     --surface-navbar-bg:      var(--tgray1);
-    --surface-navbar-bd:      1px solid var(--tgray3);
+    --surface-navbar-bd:      1px solid rgba(127, 127, 127, 0.25);
     --surface-navbar-item-bg: var(--tgray2); 
     --surface-navbar-item-bd: 1px solid var(--tgray4); 
 
@@ -63,7 +63,7 @@
     --surface-special-card-item-bg: rgba(255, 255, 255, 0.1);
     --surface-special-card-item-bd: 1px solid rgba(255, 255, 255, 0.25);
 
-    --navbar-height: 3.25rem;
+    --navbar-height: 2.75rem;
     --main-padding:  2.25rem;
 }
 

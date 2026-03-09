@@ -16,9 +16,6 @@ export function NavbarBottom() {
               <i className="bi bi-house"></i>
             </a>
           </li>
-        </ul>
-
-        <ul className='navLinks'>
           <li>
             <a href="/settings">
               <i className="bi bi-gear"></i>

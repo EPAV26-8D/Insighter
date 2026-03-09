@@ -1,3 +1,5 @@
 export function Churrasco() {
-  return <h1>Churrasco</h1>
+  return (
+    <h1>Churrasco</h1>
+  )
 }

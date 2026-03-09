@@ -1,4 +1,4 @@
-import styles from './navbar.module.css'
+import styles from './navbarTop.module.css'
 
 type NavbarProps = {
   onToggleSidebar: () => void
@@ -6,7 +6,7 @@ type NavbarProps = {
 
 export function Navbar({ onToggleSidebar }: NavbarProps) {
   return (
-    <header className={styles.header}>
+    <footer className={styles.footer}>
       <nav className={styles.navbar} aria-label="Navegação principal">
         <ul className={styles.navLinks}>
           <li>
@@ -29,6 +29,6 @@ export function Navbar({ onToggleSidebar }: NavbarProps) {
           </li>
         </ul>
       </nav>
-    </header>
+    </footer>
   )
 }

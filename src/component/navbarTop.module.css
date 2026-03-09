@@ -1,8 +1,8 @@
-.header {
+.footer {
 	position:         fixed;
 	display:          flex;
 	align-items:      center;
-	height:           calc(var(--header-height));
+	height:           calc(var(--footer-height));
 	background-color: var(--surface-navbar-bg);
 	border-bottom:    var(--surface-navbar-bd);
 	box-shadow:       0 0 2rem rgba(0, 0, 0, 0.2);
@@ -32,8 +32,8 @@
 }
 
 .navLinks a, .navLinks button {
-	width:              calc(var(--header-height) - 1rem);
-	height:             calc(var(--header-height) - 1rem);
+	width:              calc(var(--footer-height) - 1rem);
+	height:             calc(var(--footer-height) - 1rem);
 	background-color:   var(--surface-navbar-item-bg);
 	border:             var(--surface-navbar-item-bd);
 	border-radius:      10px;

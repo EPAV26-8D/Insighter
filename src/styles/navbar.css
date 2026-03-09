@@ -30,7 +30,7 @@
 	list-style:  none;
 }
 
-.navLinks li {
+.navLinks li, .navLinks button {
     display:            flex;
     align-items:        center;
     justify-content:    center;
@@ -39,9 +39,12 @@
 	background-color:   transparent;
     border:             none;
 	border-right:       var(--surface-navbar-bd);
+    color:              var(--text-color);
 }
 
-.navLinks
+.navLinks li a {
+    color: var(--text-color);
+}
 
 .navLinks > *:last-child {
     border-right: none;

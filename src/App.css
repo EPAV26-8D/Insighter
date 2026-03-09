@@ -1,4 +1,4 @@
- :root {
+:root {
     --salmon: #FF5614;
     --orange: #ff9204;
     --yellow: #ffbd2f;
@@ -26,23 +26,20 @@
     --dgray5: #202020;
     --dgray6: #282828;
     
-    --tdgray1: #000000ee;
-    --tdgray2: #030202ee;
-    --tdgray3: #101010ee;
-    --tdgray4: #181818ee;
-    --tdgray5: #202020ee;
-    --tdgray6: #282828ee;
+    --tdgray1: #000000f0;
+    --tdgray2: #050505f0;
+    --tdgray3: #101010f0;
+    --tdgray4: #181818f0;
+    --tdgray5: #202020f0;
+    --tdgray6: #282828f0;
 
     --text-color: #202020;
     --surface-color: var(--gray1);
 
-    --surface-navbar-bg: linear-gradient(
-		90deg,
-		var(--salmon),
-		var(--orange)
-	);
-    --surface-navbar-item-bg: rgba(255, 255, 255, 0.15); 
-    --surface-navbar-item-bd: 1px solid rgba(255, 255, 255, 0.15); 
+    --surface-navbar-bg:      var(--tgray1);
+    --surface-navbar-bd:      1px solid var(--tgray3);
+    --surface-navbar-item-bg: var(--tgray3); 
+    --surface-navbar-item-bd: 1px solid var(--tgray4); 
 
     --surface-sidebar-bg: var(--tgray2);
     --surface-sidebar-bd: 1px solid var(--tgray4);
@@ -106,7 +103,6 @@ body {
     background-image:
         linear-gradient(var(--gray2) 1px, transparent 1px),
         linear-gradient(90deg, var(--gray2) 1px, transparent 1px);
-
     background-size: 2rem 2rem;
 }
 
@@ -127,7 +123,7 @@ h6 { font-size: 1.2rem; }
 p  { font-size: 1rem; }
 
 main {
-    padding-top: calc(var(--header-height) + var(--main-padding));
+    padding-top: var(--header-height);
 }
 
 main .content {

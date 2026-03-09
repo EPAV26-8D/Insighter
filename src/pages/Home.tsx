@@ -3,13 +3,14 @@ import almocoEspecial from "../assets/almoco-especial-img.jpg"
 import jantarDiaaDia from "../assets/jantar-dia-a-dia-img.avif"
 import jantarEspecial from "../assets/jantar-especial-img.webp"
 import churrasco from "../assets/churrasco-img.webp"
-import "./Home.module.css"
+import  styles from"./Home.module.css"
 
 export function Home() {
   return (
     <>
-      <section className="hero">
+      <section className={styles.hero}>
         <h1>Páscoa</h1>
+        <p>Ocasião Especial - Mar/Abr</p>
       </section>
 
       <section className="content">

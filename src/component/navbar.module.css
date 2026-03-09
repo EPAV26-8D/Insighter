@@ -4,8 +4,11 @@
 	align-items:      center;
 	width:            100%;
 	height:           calc(var(--header-height));
-	background:       var(--surface-navbar-bg);
+	background-color: var(--surface-navbar-bg);
+	border-bottom:    var(--surface-navbar-bd);
 	box-shadow:       0 0 2rem rgba(0, 0, 0, 0.2);
+	-webkit-backdrop-filter: blur(1rem);
+			backdrop-filter: blur(1rem);
 	z-index:          9999;
 }
 
@@ -36,7 +39,7 @@
 	background-color:   var(--surface-navbar-item-bg);
 	border:             var(--surface-navbar-item-bd);
 	border-radius:      10px;
-	color:             white;
+	color:              var(--text-color);
 }
 
 .navLinks a {

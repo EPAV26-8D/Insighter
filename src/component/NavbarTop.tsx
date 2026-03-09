@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react'
+import { useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react'
 import '../styles/navbar.css'
 import styles from './navbarTop.module.css'
 
@@ -39,7 +39,9 @@ function calculateTimeBarProgress(date: Date): number {
 }
 
 export function NavbarTop({ onToggleSidebar }: NavbarProps) {
+  const navRef = useRef<HTMLElement>(null)
   const [isTimeBarVisible, setIsTimeBarVisible] = useState(false)
+  const [containerWidth, setContainerWidth] = useState<number | null>(null)
   const [progress, setProgress] = useState(() => calculateTimeBarProgress(new Date()))
 
   useEffect(() => {
@@ -54,13 +56,53 @@ export function NavbarTop({ onToggleSidebar }: NavbarProps) {
 
   const progressValue = useMemo(() => Number(progress.toFixed(2)), [progress])
 
+  useLayoutEffect(() => {
+    const measureNavbarWidth = () => {
+      if (!navRef.current) {
+        return
+      }
+
+      setContainerWidth(navRef.current.scrollWidth)
+    }
+
+    measureNavbarWidth()
+
+    if (!navRef.current || !('ResizeObserver' in window)) {
+      return
+    }
+
+    const resizeObserver = new ResizeObserver(measureNavbarWidth)
+    resizeObserver.observe(navRef.current)
+
+    return () => {
+      resizeObserver.disconnect()
+    }
+  }, [])
+
+  useLayoutEffect(() => {
+    const frame = window.requestAnimationFrame(() => {
+      if (!navRef.current) {
+        return
+      }
+
+      setContainerWidth(navRef.current.scrollWidth)
+    })
+
+    return () => {
+      window.cancelAnimationFrame(frame)
+    }
+  }, [isTimeBarVisible])
+
   const showTimeBar = () => {
     setIsTimeBarVisible((previousState) => !previousState)
   }
 
   return (
-    <header className={`container ${styles.container}`}>
-      <nav className='navbar'>
+    <header
+      className={`container ${styles.container}`}
+      style={containerWidth !== null ? { width: `${containerWidth}px` } : undefined}
+    >
+      <nav ref={navRef} className='navbar'>
         <ul className='navLinks'>
           <button className='toggleSidebar' onClick={onToggleSidebar}>
             <i className='bi bi-list'></i>

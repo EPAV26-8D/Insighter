@@ -12,8 +12,18 @@ export function NavbarBottom() {
             </a>
           </li>
           <li>
+            <a href="/mapa">
+              <i className="bi bi-map"></i>
+            </a>
+          </li>
+          <li>
             <a href="/calculadora">
               <i className="bi bi-calculator"></i>
+            </a>
+          </li>
+          <li>
+            <a href="/checklist">
+              <i className="bi bi-check-square"></i>
             </a>
           </li>
         </ul>

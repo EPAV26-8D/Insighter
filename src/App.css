@@ -44,7 +44,7 @@
 
     --surface-navbar-bg:      var(--tgray1);
     --surface-navbar-bd:      1px solid var(--tgray3);
-    --surface-navbar-item-bg: var(--tgray3); 
+    --surface-navbar-item-bg: var(--tgray2); 
     --surface-navbar-item-bd: 1px solid var(--tgray4); 
 
     --surface-sidebar-bg: var(--tgray2);

@@ -23,20 +23,16 @@
 	gap:            7.5px;
 	list-style:     none;
 }
-
-.sidebar li {
+.sidebar a {
 	display:          flex;
 	align-items:      center;
-	height:           2.5rem;
-	padding:          0 1rem;
+	height:           2.75rem;
+	padding:          0.75rem 1rem;
 	background-color: var(--surface-sidebar-item-bg);
 	border:           var(--surface-sidebar-item-bd);
-	border-radius:    10px;
+	border-radius:    0.8rem;
 	cursor:           pointer;
 	transition:       background-color 0.4s;
-}
-.sidebar a {
-	font-size:       0.95rem;
 	text-decoration: none;
 	color:           var(--text-color);
 }
@@ -46,6 +42,15 @@
     -webkit-background-clip: text;
             background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.sidebar ul .especial a {
+	flex-direction: column;
+	align-items:    start;
+	height:         fit-content;
+	background:     var(--surface-special-card-bg);
+	border:         none;
+	color:        white;
 }
 
 .open {

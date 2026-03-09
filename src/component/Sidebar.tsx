@@ -10,36 +10,14 @@ export function Sidebar({ isOpen }: SidebarProps) {
       className={`${styles.sidebar} ${isOpen ? styles.open : ''}`.trim()}
       aria-hidden={!isOpen}
     >
-      <h3>Categorias</h3>
-      <ul>
-        <li>
-          <a href="/bovinos">Bovinos</a>
-        </li>
-        <li>
-          <a href="/suinos">Suínos</a>
-        </li>
-        <li>
-          <a href="/aves">Aves</a>
-        </li>
-        <li>
-          <a href="/pescados">Pescados</a>
-        </li>
-        <li>
-          <a href="/entradas">Entradas</a>
-        </li>
-        <li>
-          <a href="/acompanhamentos">Acompanhamentos</a>
-        </li>
-        <li>
-          <a href="/sobremesas">Sobremesas</a>
-        </li>
-        <li>
-          <a href="/bebidas">Bebidas</a>
-        </li>
-      </ul>
-
       <h3>Ocasiões</h3>
       <ul>
+        <li className={styles.especial}>
+          <a href="/especial">
+            <h5>Páscoa</h5>
+            <p>Ver Detalhes</p>
+          </a>
+        </li>
         <li>
           <a href="/churrasco">Churrasco</a>
         </li>

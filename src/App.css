@@ -63,7 +63,7 @@
     --surface-special-card-item-bg: rgba(255, 255, 255, 0.1);
     --surface-special-card-item-bd: 1px solid rgba(255, 255, 255, 0.25);
 
-    --footer-height: 3.25rem;
+    --navbar-height: 3.25rem;
     --main-padding:  2.25rem;
 }
 
@@ -129,7 +129,7 @@ h6 { font-size: 1.2rem; }
 p  { font-size: 1rem; }
 
 main {
-    padding-bottom: var(--footer-height);
+    padding-bottom: var(--navbar-height);
 }
 
 main .content {

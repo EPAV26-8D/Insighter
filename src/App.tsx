@@ -9,7 +9,7 @@ import { Home } from './pages/Home'
 import { JantarDiaaDia } from './pages/JantarDiaaDia'
 import { JantarEspecial } from './pages/JantarEspecial'
 import { Especial } from './pages/Especial'
-import { Settings } from './pages/Settings'
+import { Configuracoes } from './pages/Settings'
 import './App.css'
 
 type Theme = 'light' | 'dark'
@@ -43,7 +43,7 @@ function App() {
 
   const pageByRoute = {
     '/': <Home />,
-    '/settings': <Settings theme={theme} onToggleTheme={handleToggleTheme} />,
+    '/configuracoes': <Configuracoes theme={theme} onToggleTheme={handleToggleTheme} />,
     '/churrasco': <Churrasco />,
     '/almoco-dia-a-dia': <AlmocoDiaaDia />,
     '/almoco-especial': <AlmocoEspecial />,

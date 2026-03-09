@@ -26,6 +26,11 @@ export function NavbarBottom() {
               <i className="bi bi-check-square"></i>
             </a>
           </li>
+          <li>
+            <a href="/configuracoes">
+              <i className="bi bi-gear"></i>
+            </a>
+          </li>
         </ul>
       </nav>
     </header>

@@ -5,7 +5,7 @@ type SettingsProps = {
   onToggleTheme: () => void
 }
 
-export function Settings({ theme, onToggleTheme }: SettingsProps) {
+export function Configuracoes({ theme, onToggleTheme }: SettingsProps) {
   return (
     <>
       <h1>Configurações</h1>

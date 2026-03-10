@@ -17,16 +17,6 @@ export function BottomNavbar() {
             </a>
           </li>
           <li>
-            <a href="/calculator">
-              <i className="bi bi-calculator"></i>
-            </a>
-          </li>
-          <li>
-            <a href="/checklist">
-              <i className="bi bi-check-square"></i>
-            </a>
-          </li>
-          <li>
             <a href="/settings">
               <i className="bi bi-gear"></i>
             </a>

@@ -182,11 +182,23 @@ main .content {
     color:            var(--text-color);
 }
 
-.card-carousel .card img {
+.card-carousel .card img, .card-carousel .card .icon {
     height:        6.5rem;
     border-radius: 1rem 1rem 0 0;
     object-fit:    cover;
     flex-shrink:   0;
+}
+
+.card-carousel .card .icon {
+    display:         flex;
+    align-items:     center;
+    justify-content: center;
+    background:      var(--surface-card-bg);
+}
+
+.card-carousel .card .icon i {
+    font-size: 2.5rem;
+    color:   white;
 }
 
 .card-carousel .card p {

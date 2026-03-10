@@ -76,46 +76,12 @@ export function HomePage() {
           <ul className="card-carousel">
             <li>
               <a href="/barbecue" className="card">
-                <img src={barbecueImage} />
-                <div className="card-text">
-                  <h6>Churrasco</h6>
-                  <p>Ver detalhes</p>
+                <div className="icon">
+                  <i className="bi bi-map"></i>
                 </div>
-              </a>
-            </li>
-            <li>
-              <a href="/everyday-lunch" className="card">
-                <img src={lunchEverydayImage} />
                 <div className="card-text">
-                  <h6>Almoço do Dia a Dia</h6>
-                  <p>Ver detalhes</p>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="/special-lunch" className="card">
-                <img src={lunchSpecialImage} />
-                <div className="card-text">
-                  <h6>Almoço Especial</h6>
-                  <p>Ver detalhes</p>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="/everyday-dinner" className="card">
-                <img src={dinnerEverydayImage} />
-                <div className="card-text">
-                  <h6>Jantar do Dia a Dia</h6>
-                  <p>Ver detalhes</p>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="/special-dinner" className="card">
-                <img src={dinnerSpecialImage} />
-                <div className="card-text">
-                  <h6>Jantar Especial</h6>
-                  <p>Ver detalhes</p>
+                  <h6>Mapa</h6>
+                  <p>Verifique onde está</p>
                 </div>
               </a>
             </li>

@@ -81,7 +81,18 @@ export function HomePage() {
                 </div>
                 <div className="card-text">
                   <h6>Mapa</h6>
-                  <p>Verifique onde está</p>
+                  <p>Divisão de Carteiras</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="/barbecue" className="card">
+                <div className="icon">
+                  <i className="bi bi-map"></i>
+                </div>
+                <div className="card-text">
+                  <h6>Mapa</h6>
+                  <p>Divisão de Carteiras</p>
                 </div>
               </a>
             </li>

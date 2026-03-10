@@ -49,7 +49,7 @@
 	flex-direction: column;
 	align-items:    start;
 	height:         fit-content;
-	background:     var(--surface-special-card-bg);
+	background:     var(--surface-card-bg);
 	border:         none;
 	color:        white;
 }

@@ -17,12 +17,12 @@ export function Home() {
       </section>
 
       <section className="content">
-        <article className="card special">
+        <article className="card-container">
           <h2>Bem-vindo(a)!</h2>
           <p>Comece escolhendo uma ocasião:</p>
-          <ul className="card-options">
+          <ul className="card-carousel">
             <li>
-              <a href="/churrasco" className="card-option">
+              <a href="/churrasco" className="card">
                 <img src={churrasco} />
                 <div className="card-text">
                   <h6>Churrasco</h6>
@@ -31,7 +31,7 @@ export function Home() {
               </a>
             </li>
             <li>
-              <a href="/almoco-dia-a-dia" className="card-option">
+              <a href="/almoco-dia-a-dia" className="card">
                 <img src={almocoDiaaDia} />
                 <div className="card-text">
                   <h6>Almoço do Dia a Dia</h6>
@@ -40,7 +40,7 @@ export function Home() {
               </a>
             </li>
             <li>
-              <a href="/almoco-especial" className="card-option">
+              <a href="/almoco-especial" className="card">
                 <img src={almocoEspecial} />
                 <div className="card-text">
                   <h6>Almoço Especial</h6>
@@ -49,7 +49,7 @@ export function Home() {
               </a>
             </li>
             <li>
-              <a href="/jantar-dia-a-dia" className="card-option">
+              <a href="/jantar-dia-a-dia" className="card">
                 <img src={jantarDiaaDia} />
                 <div className="card-text">
                   <h6>Jantar do Dia a Dia</h6>
@@ -58,7 +58,58 @@ export function Home() {
               </a>
             </li>
             <li>
-              <a href="/jantar-especial" className="card-option">
+              <a href="/jantar-especial" className="card">
+                <img src={jantarEspecial} />
+                <div className="card-text">
+                  <h6>Jantar Especial</h6>
+                  <p>Ver detalhes</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </article>
+
+        <article>
+          <h2>Ferramentas</h2>
+          <ul className="card-carousel">
+            <li>
+              <a href="/churrasco" className="card">
+                <img src={churrasco} />
+                <div className="card-text">
+                  <h6>Churrasco</h6>
+                  <p>Ver detalhes</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="/almoco-dia-a-dia" className="card">
+                <img src={almocoDiaaDia} />
+                <div className="card-text">
+                  <h6>Almoço do Dia a Dia</h6>
+                  <p>Ver detalhes</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="/almoco-especial" className="card">
+                <img src={almocoEspecial} />
+                <div className="card-text">
+                  <h6>Almoço Especial</h6>
+                  <p>Ver detalhes</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="/jantar-dia-a-dia" className="card">
+                <img src={jantarDiaaDia} />
+                <div className="card-text">
+                  <h6>Jantar do Dia a Dia</h6>
+                  <p>Ver detalhes</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="/jantar-especial" className="card">
                 <img src={jantarEspecial} />
                 <div className="card-text">
                   <h6>Jantar Especial</h6>

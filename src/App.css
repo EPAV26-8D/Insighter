@@ -50,16 +50,16 @@
     --surface-sidebar-item-bg: var(--tgray2);
     --surface-sidebar-item-bd: 1px solid var(--tgray4);
 
-    --surface-card-bg: var(--gray2);
-    --surface-card-bd: 1px solid var(--gray3);
-    --surface-special-card-bg: linear-gradient(
+    --surface-card-bg: linear-gradient(
 		90deg,
 		var(--salmon),
 		var(--orange)
 	);
+    --card-carousel-item-bg: rgba(255, 255, 255, 0.1);
+    --card-carousel-item-bd: 1px solid rgba(255, 255, 255, 0.25);
 
-    --surface-special-card-item-bg: rgba(255, 255, 255, 0.1);
-    --surface-special-card-item-bd: 1px solid rgba(255, 255, 255, 0.25);
+    --surface-card-carousel-item-bg: var(--gray2);
+    --surface-card-carousel-item-bd: 1px solid var(--gray4);
 
     --navbar-height: 2.75rem;
     --main-padding:  2.25rem;
@@ -140,23 +140,17 @@ main .content {
     padding:        var(--main-padding);
 }
 
-.card {
-    padding:          1.5rem;
-    background-color: var(--surface-card-bg);
-    border:           var(--surface-card-bd);
+.card-container {
+    position:         relative;
+    padding:          2rem;
+    background:       var(--surface-card-bg);
+    border:           none;
     border-radius:    1.75rem;
     box-shadow:       0 0 1rem rgba(0, 0, 0, 0.1);
+    color:          white;
 }
 
-.card.special {
-    position:   relative;
-    padding:    2rem;
-    background: var(--surface-special-card-bg);
-    border:     none;
-    color:      white;
-}
-
-.card.special::before {
+.card-container::before {
     content:        "";
     position:       absolute;
     inset:          0.75rem;               
@@ -165,45 +159,53 @@ main .content {
     pointer-events: none;
 }
 
-.card .card-options {
+.card-carousel {
     display:        flex;
     list-style:     none;
-    margin-top:     10px;
     gap:            10px;
     overflow-x:     auto;
 }
 
-.card .card-options::-webkit-scrollbar {
+.card-carousel::-webkit-scrollbar {
     display: none;
 }
 
-.card .card-option {
+.card-carousel .card {
     display:          flex;
     flex-direction:   column;
     width:            10rem;
     height:           100%;
-    background-color: var(--surface-special-card-item-bg);
-    border:           var(--surface-special-card-item-bd);
+    background-color: var(--surface-card-carousel-item-bg);
+    border:           var(--surface-card-carousel-item-bd);
     border-radius:    12px;
     overflow:         hidden;
-    color:            white;
     text-decoration:  none;
     cursor:           pointer;
+    color:            var(--text-color);
 }
 
-.card .card-option img {
+.card-carousel .card img {
     height:        6.5rem;
     object-fit:    cover;
-    border-bottom: var(--surface-special-card-item-bd);
+    border-bottom: var(--surface-card-item-bd);
 }
 
-.card .card-option p {
+.card-carousel .card p {
     font-size: 0.85rem;
     opacity:   0.8;
 }
 
-.card .card-text {
+.card-carousel .card-text {
     padding:         10px;
     text-align:      left;
+}
 
+.card-container .card-carousel {
+    margin-top: 10px;
+}
+
+.card-container .card-carousel .card {
+    background-color: var(--card-carousel-item-bg);
+    border:           var(--card-carousel-item-bd);
+    color:            white;
 }

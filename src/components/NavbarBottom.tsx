@@ -1,23 +1,23 @@
 import '../styles/navbar.css'
-import styles from './navbarBottom.module.css'
+import styles from './BottomNavbar.module.css'
 
-export function NavbarBottom() {
+export function BottomNavbar() {
   return (
     <header className={`container ${styles.container}`}>
-      <nav className='navbar'>
-        <ul className='navLinks'>
+      <nav className="navbar">
+        <ul className="navLinks">
           <li>
             <a href="/">
               <i className="bi bi-house"></i>
             </a>
           </li>
           <li>
-            <a href="/mapa">
+            <a href="/map">
               <i className="bi bi-map"></i>
             </a>
           </li>
           <li>
-            <a href="/calculadora">
+            <a href="/calculator">
               <i className="bi bi-calculator"></i>
             </a>
           </li>
@@ -27,7 +27,7 @@ export function NavbarBottom() {
             </a>
           </li>
           <li>
-            <a href="/configuracoes">
+            <a href="/settings">
               <i className="bi bi-gear"></i>
             </a>
           </li>

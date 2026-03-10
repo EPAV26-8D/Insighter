@@ -1,15 +1,15 @@
 type Theme = 'light' | 'dark'
 
-type SettingsProps = {
+type SettingsPageProps = {
   theme: Theme
-  onToggleTheme: () => void
+  onThemeToggle: () => void
 }
 
-export function Configuracoes({ theme, onToggleTheme }: SettingsProps) {
+export function SettingsPage({ theme, onThemeToggle }: SettingsPageProps) {
   return (
     <>
       <h1>Configurações</h1>
-      <button type="button" onClick={onToggleTheme}>
+      <button type="button" onClick={onThemeToggle}>
         Alterar para modo {theme === 'light' ? 'escuro' : 'claro'}
       </button>
     </>

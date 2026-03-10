@@ -45,7 +45,7 @@
     -webkit-text-fill-color: transparent;
 }
 
-.sidebar ul .especial a {
+.sidebar ul .highlightedEvent a {
 	flex-direction: column;
 	align-items:    start;
 	height:         fit-content;

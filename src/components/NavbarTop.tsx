@@ -1,9 +1,9 @@
 import { useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react'
 import '../styles/navbar.css'
-import styles from './navbarTop.module.css'
+import styles from './TopNavbar.module.css'
 
-type NavbarProps = {
-  onToggleSidebar: () => void
+type TopNavbarProps = {
+  onSidebarToggle: () => void
 }
 
 const TIME_ZONE = 'America/Sao_Paulo'
@@ -38,7 +38,7 @@ function calculateTimeBarProgress(date: Date): number {
   return ((currentMinutes - START_MINUTES) / WINDOW_DURATION) * 100
 }
 
-export function NavbarTop({ onToggleSidebar }: NavbarProps) {
+export function TopNavbar({ onSidebarToggle }: TopNavbarProps) {
   const navRef = useRef<HTMLElement>(null)
   const [isTimeBarVisible, setIsTimeBarVisible] = useState(false)
   const [containerWidth, setContainerWidth] = useState<number | null>(null)
@@ -93,7 +93,7 @@ export function NavbarTop({ onToggleSidebar }: NavbarProps) {
     }
   }, [isTimeBarVisible])
 
-  const showTimeBar = () => {
+  const toggleTimeBar = () => {
     setIsTimeBarVisible((previousState) => !previousState)
   }
 
@@ -102,15 +102,15 @@ export function NavbarTop({ onToggleSidebar }: NavbarProps) {
       className={`container ${styles.container}`}
       style={containerWidth !== null ? { width: `${containerWidth}px` } : undefined}
     >
-      <nav ref={navRef} className='navbar'>
-        <ul className='navLinks'>
-          <button className='toggleSidebar' onClick={onToggleSidebar}>
-            <i className='bi bi-list'></i>
+      <nav ref={navRef} className="navbar">
+        <ul className="navLinks">
+          <button className="toggleSidebar" onClick={onSidebarToggle}>
+            <i className="bi bi-list"></i>
           </button>
-          <button className='toggleTimeBar' onClick={showTimeBar}>
-            <i className='bi bi-clock'></i>
+          <button className="toggleTimeBar" onClick={toggleTimeBar}>
+            <i className="bi bi-clock"></i>
           </button>
-          {isTimeBarVisible && <progress className='timeBar' value={progressValue} max={100} />}
+          {isTimeBarVisible && <progress className="timeBar" value={progressValue} max={100} />}
         </ul>
       </nav>
     </header>

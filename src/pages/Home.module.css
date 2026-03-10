@@ -36,8 +36,8 @@
     height:           2rem;
     padding:          0 1rem;
     margin-top:       0.5rem;
-    background-color: var(--surface-card-item-bg);
-    border:           var(--surface-card-item-bd);
+    background-color: var(--card-carousel-item-bg);
+    border:           var(--card-carousel-item-bd);
     border-radius:    0.5rem;
     text-decoration:  none;
     color:            white;

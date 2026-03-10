@@ -58,8 +58,9 @@
     --card-carousel-item-bg: rgba(255, 255, 255, 0.1);
     --card-carousel-item-bd: 1px solid rgba(255, 255, 255, 0.25);
 
-    --surface-card-carousel-item-bg: var(--gray2);
-    --surface-card-carousel-item-bd: 1px solid var(--gray4);
+    --surface-card-caroussel-item-width: 10rem;
+    --surface-card-carousel-item-bg:     var(--gray2);
+    --surface-card-carousel-item-bd:     1px solid var(--gray4);
 
     --navbar-height: 2.75rem;
     --main-padding:  2.25rem;
@@ -173,11 +174,8 @@ main .content {
 .card-carousel .card {
     display:          flex;
     flex-direction:   column;
-    width:            10rem;
+    width:            var(--surface-card-caroussel-item-width);
     height:           100%;
-    background-color: var(--surface-card-carousel-item-bg);
-    border:           var(--surface-card-carousel-item-bd);
-    border-radius:    12px;
     overflow:         hidden;
     text-decoration:  none;
     cursor:           pointer;
@@ -186,8 +184,9 @@ main .content {
 
 .card-carousel .card img {
     height:        6.5rem;
+    border-radius: 1rem 1rem 0 0;
     object-fit:    cover;
-    border-bottom: var(--surface-card-item-bd);
+    flex-shrink:   0;
 }
 
 .card-carousel .card p {
@@ -196,15 +195,19 @@ main .content {
 }
 
 .card-carousel .card-text {
-    padding:         10px;
-    text-align:      left;
+    height:           100%;
+    padding:          10px;
+    background-color: var(--surface-card-carousel-item-bg);
+    border:           var(--surface-card-carousel-item-bd);
+    border-radius:    0 0 1rem 1rem;
+    text-align:       left;
 }
 
 .card-container .card-carousel {
     margin-top: 10px;
 }
 
-.card-container .card-carousel .card {
+.card-container .card-carousel .card .card-text {
     background-color: var(--card-carousel-item-bg);
     border:           var(--card-carousel-item-bd);
     color:            white;
